@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+    <title>Document</title>
+</head>
+
+<body class="background">
+    <div class="color-primario w-100 px-5">
+        <nav class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/restaurante.png" alt="Logo" width="60" height="40"
+                        class="d-inline-block align-text-center bi me-2" />
+                    <span class="fs-4 color-secundario px-2"> Emely's Restaurant </span>
+                </a>
+            </div>
+            <ul class="nav navbar">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#Inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Ubicacion">Ubicacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Delivery">Domicilio</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/carusel/desayunos.webp" class="d-block w-100 img-carousel" alt="..." />
+                <div class="carousel-caption d-none d-md-block color-secundario">
+                    <h4 class="text-color">Desayunos saludables</h4>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carusel/Ensalada.webp" class="d-block w-100 img-carousel" alt="..." />
+                <div class="carousel-caption d-none d-md-block color-secundario">
+                    <h4 class="text-color">Ensaladas saludables</h4>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carusel/pollo crispy.jpg" class="d-block w-100 img-carousel" alt="..." />
+                <div class="carousel-caption d-none d-md-block color-secundario">
+                    <h4 class="text-color">Hamburguesas para romper la dieta</h4>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carusel/pizza.jpeg" class="d-block w-100 img-carousel" alt="..." />
+                <div class="carousel-caption d-none d-md-block color-secundario">
+                    <h4 class="text-color">Pizza para compartir</h4>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carusel/tacos.jpg" class="d-block w-100 img-carousel" alt="..." />
+                <div class="carousel-caption d-none d-md-block color-secundario">
+                    <h4 class="text-color">Tacos con sabor de la casa</h4>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div id="Inicio" class="container color-primario mb-4">
+        <div class="align-items-center text-center">
+            <h1>Bienvenido a Emely's Restaurant</h1>
+            <img src="./img/emely-restaurant-mainwebp.webp" class="d-block w-25 m-auto my-4" alt="logo" />
+            <h2>Un lugar para reunirte y sentirte en familia</h2>
+            <p class="mx-5 px-5">
+                Es la familia la que nos ayuda y apoya en lo que realmente importa. Es
+                por eso que en Emely's Restaurant, todos somos familia
+            </p>
+        </div>
+
+        <div class="container-fluid d-flex px-5">
+            <div class="row justify-content-start">
+                <div class="col-md col-sl-4">
+                    <img src="./img/familia.avif" alt="convivir en familia" class="w-100 my-3" />
+                </div>
+                <div class="col-md col-sl-auto d-flex align-items-center text-center">
+                    <p>
+                        En Emely's Restaurant sabemos que la vida es mejor cuando estamos
+                        todos juntos y que todos somos mas felices cuando estamos en
+                        familia. Gracias por compartir con tu familia con nosotros
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Menu">
+        <div class="color-primario px-5 py-2">
+            <h1>Menu</h1>
+        </div>
+        <div class="px-5 py-2">
+            <h2>Desayunos</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Desayunos/panqueques.jpg" class="card-img-top" alt="Panqueques" />
+                        <div class="card-body">
+                            <h3>Panqueques</h3>
+                            <p class="card-text">
+                                Unos ricos panqueques hechos con masa suave y leche a su
+                                eleccion, acompanados por la fruta de su preferencia
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Desayunos/Eltipico.avif" class="card-img-top" alt="El tipico" />
+                        <div class="card-body">
+                            <h3>El tipico</h3>
+                            <p class="card-text">
+                                El dasayuno tipido de nuestro pais: Deliciosos frijoles fritos
+                                con huevos a tu gusto, acompanados de platanos fritos y crema
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Desayunos/Omelet.jpeg" class="card-img-top" alt="Omelet" />
+                        <div class="card-body">
+                            <h3>Omelet</h3>
+                            <p class="card-text">
+                                Delicioso omelett de huevo con jamon queso y verduras
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Desayunos/Yogurt y fruta.jpg" class="card-img-top" alt="Yogurt" />
+                        <div class="card-body">
+                            <h3>Yogurt y frutas</h3>
+                            <p class="card-text">
+                                Un desayuno saludable: yogurt de tu preferencia acompanado de
+                                las frutas frescas que tu elijas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 py-2">
+            <h2>Ensaladas</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Ensaladas/Ensalada de aguacate.jpg" class="card-img-top" alt="Panqueques" />
+                        <div class="card-body">
+                            <h3>Ensalada de aguacate</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Ensaladas/Ensalada de pasta.jpg" class="card-img-top" alt="El tipico" />
+                        <div class="card-body">
+                            <h3>Ensalada de pasta</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Ensaladas/ensalada-de-pollo.jpg" class="card-img-top" alt="Omelet" />
+                        <div class="card-body">
+                            <h3>Ensalada de pollo</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 py-2">
+            <h2>Pizza</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/pizza/Hawaina.jpg" class="card-img-top" alt="Panqueques" />
+                        <div class="card-body">
+                            <h3>Pizza Hawaina</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum.                             </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/pizza/jamon.jpg" class="card-img-top" alt="El tipico" />
+                        <div class="card-body">
+                            <h3>Pizza de jamon</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/pizza/peperoni.jpg" class="card-img-top" alt="Omelet" />
+                        <div class="card-body">
+                            <h3>Pizza de peperoni</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/pizza/queso.webp" class="card-img-top" alt="Yogurt" />
+                        <div class="card-body">
+                            <h3>Pizza de queso</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/pizza/Romana.jpg" class="card-img-top" alt="Yogurt" />
+                        <div class="card-body">
+                            <h3>Pizza Romana</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="px-5 py-2">
+            <h2>Tacos</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Tacos/birria.jpeg" class="card-img-top" alt="Panqueques" />
+                        <div class="card-body">
+                            <h3>Tacos de Birria</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Tacos/carne.jpg" class="card-img-top" alt="El tipico" />
+                        <div class="card-body">
+                            <h3>Tacos de carne asada</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Tacos/costilla.jpg" class="card-img-top" alt="Omelet" />
+                        <div class="card-body">
+                            <h3>Tacos de Costilla</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Tacos/pastor.jpeg" class="card-img-top" alt="Omelet" />
+                        <div class="card-body">
+                            <h3>Tacos al pastor</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 py-2">
+            <h2>Hamburguesas</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Hamburguesas/carne y tocino.jpg" class="card-img-top" alt="Panqueques" />
+                        <div class="card-body">
+                            <h3>Hamburguesa de carne y tocino </h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Hamburguesas/carne.jpg" class="card-img-top" alt="El tipico" />
+                        <div class="card-body">
+                            <h3>Hamburguesa de carne</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Hamburguesas/pollo crispy.jpg" class="card-img-top" alt="Omelet" />
+                        <div class="card-body">
+                            <h3>Hamburguesa de pollo crispy</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Hamburguesas/pollo grill.jpg" class="card-img-top" alt="Omelet" />
+                        <div class="card-body">
+                            <h3>Hamburguesa de pollo grill</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 py-2">
+            <h2>Bebidas</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Bebidas/cafe.avif" class="card-img-top" alt="Cafe" />
+                        <div class="card-body">
+                            <h3>Cafe</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Bebidas/sodas.avif" class="card-img-top" alt="Sodas" />
+                        <div class="card-body">
+                            <h3>Soda</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Bebidas/refrescos.jpg" class="card-img-top" alt="Refrescos" />
+                        <div class="card-body">
+                            <h3>Refrescos</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Bebidas/margarita.jpg" class="card-img-top" alt="Margarita" />
+                        <div class="card-body">
+                            <h3>Margarita</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Bebidas/mojito cubano.webp" class="card-img-top" alt="Mojito" />
+                        <div class="card-body">
+                            <h3>Mojito cubano</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-3 card-color" style="width: 18rem">
+                        <img src="./img/Bebidas/samgria.jpg" class="card-img-top" alt="Sangria" />
+                        <div class="card-body">
+                            <h3>Sangria</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="Ubicacion" class="w-100 text-center">
+        <div class="color-primario px-5 py-2">
+            <h1>Ubicacion</h1>
+        </div>
+        <p class=" h4 my-3">Nos encantara atenderte en esta direccion:</p>
+        <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa dignissim, 
+            fringilla nibh ut, consectetur augue. Mauris eu magna scelerisque, vehicula nunc eget, bibendum ipsum.  </p>
+        <iframe class="container m-5 mt-0"
+            src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d62022.2255946088!2d-89.27177702295057!3d13.69486809274645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d13.683916799999999!2d-89.2207104!4m5!1s0x8f63301a2cb4ef59%3A0xee056fcc96d337af!2sjunior%20achievement!3m2!1d13.7108656!2d-89.23960819999999!5e0!3m2!1ses!2ssv!4v1693457687888!5m2!1ses!2ssv"
+            width="560" height="315" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div id="Delivery" class="w-100 ">
+        <div class="color-primario px-5 py-2">
+            <h1>Delivery</h1>
+        </div>
+        <div class="text-center h4 mt-3">
+            <p>Contamos con la opcion de delivery en las siguientes plataformas</p>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class=" card m-3 p-3 card-color" style="width: 15rem">
+                    <img src="./img/Delivery/pedidos ya.jpg" class="card-img-top" alt="Pedidos" />
+                </div>
+                <div class="card m-3 p-3 card-color" style="width: 15rem">
+                    <img src="./img/Delivery/uber-eats-logo_1618962634.png" class="card-img-top" alt="Uber eats" />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="color-primario align-bottom text-center py-3">
+        <img src="./img/emely-restaurant-mainwebp.webp" class="d-block  m-auto my-4" alt="logo" style="width: 10rem;"/>
+        <p>
+            Conoce nuestras politicas | @2001 Emely's restaurant El Salvador. Todos
+            los derechos reservados: Emely Paola Lazo Barahona.
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

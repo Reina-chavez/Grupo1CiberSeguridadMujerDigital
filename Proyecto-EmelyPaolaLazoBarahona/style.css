@@ -1,0 +1,55 @@
+.background{
+   /* background-color: #FFC7BD;*/
+   margin: 0;
+   padding: 0;
+   
+}
+.color-primario{
+    background-color: #e9e1e0;
+    color: #9E6055;
+}
+.color-secundario{
+    background-color: #e9e1e0ae;
+    color: #9E6055;
+}
+.text-color{
+    color: #9E6055;
+}
+
+.carousel{
+    width: 100%;
+}
+
+.img-carousel{
+    object-fit: cover;
+    width:100%;
+    height: 75vh;
+  }
+
+#Inicio{
+    
+    padding: 5vh;
+  }
+
+#Inicio h1{
+    color: black;
+}  
+
+.card-color{
+    background-color: #e9e1e0 !important;
+    color: #9E6055 !important;
+    
+
+}
+
+.card-color:hover{
+    box-shadow: 5px 5px 8px;
+}
+
+.card img {
+    height: 180px;
+}
+
+footer{
+    
+}

@@ -1,0 +1,147 @@
+.body {
+    background-color: rgb(10, 10, 10);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.earth {
+    width: 300px;
+    height: 300px;
+    background: url(https://shorturl.at/jluH8);
+    border-radius: 50%;
+    background-size: 610px;
+    box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0), inset 0 12px 4px rgba(3, 3, 3, 0.3);
+    animation-name: rotate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: 610px 0px;
+    }
+}
+.style {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.spinner-box {
+    width: 600px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+}
+.leo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+.blue-orbit {
+    width: 330px;
+    height: 330px;
+    border: 4px solid #179adba5;
+    -webkit-animation: spin3D 3s linear 0.2s infinite;
+}
+.green-orbit {
+    width: 240px;
+    height: 240px;
+    border: 4px solid #26e274a5;
+    -webkit-animation: spin3D 2s linear 0s infinite;
+}
+.red-orbit {
+    width: 180px;
+    height: 180px;
+    border: 4px solid #ee8b21a5;
+    -webkit-animation: spin3D 1s linear 0s infinite;
+}
+.whith-orbit {
+    width: 120px;
+    height: 120px;
+    border: 4px solid #ffffff;
+    -webkit-animation: spin3D 10s linear 0s infinite;
+}
+.w1 {
+    transform: rotate3d(1, 1, 1 90deg);
+}
+.w2 {
+    transform: rotate3d(1, 2, 0.5, 90deg);
+}
+.w3 {
+    transform: rotate3d(0.5, 1, 2, 90deg);
+}
+@keyframes spin3D {
+    from {
+        transform: rotate3d(0.5, 0.5, 0.5, 360deg);
+    }
+    to {
+        transform: rotate3d(0deg);
+    }
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+.flip-card-inmer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inmer {
+    transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+}
+.flip-card-front {
+    background-image: 
+    linear-gradient(
+        45deg, #6f04d9, #d9048e
+    );
+}
+.flip-card-front img {
+    width: 300px;
+    height: 330px;
+    margin-top: 1rem;
+    
+}
+.flip-card-back {
+    background-image: 
+    linear-gradient(
+        315deg, #6f04d9, #8a045c
+    );
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+.flip-card-back img {
+    width: 140px;
+    margin-top: 1rem;
+}
+.flip-card-back h3 {
+    margin-bottom: 0.3rem;
+}

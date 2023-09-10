@@ -1,0 +1,152 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('imagenes/background.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #1b2a49; /* Fondo principal */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ec6837;
+}
+
+/* Estilos para el menú desplegable */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ec6837;
+    z-index: 1;
+    width: auto;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul ul li {
+    padding: 10px;
+    text-align: left;
+    display: block; 
+    white-space: nowrap;
+}
+
+nav ul ul li a {
+    color: white;
+    transition: background-color 0.3s;
+}
+
+nav ul ul li a:hover {
+    background-color: #fca92e; 
+}
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #555; 
+    color: #AAA;
+    font-family: Raleway;
+    text-align: center;
+    padding: 1em 0; 
+}
+
+footer p {
+    margin: 0; 
+}
+
+
+
+/* Estilos para el contenedor principal */
+
+
+.contenedormenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+/* Estilos para los botones */
+.botones {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones button {
+    background-color: rgb(3, 79, 12);
+    color: white;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 15%;
+}
+
+/* Estilos para el contenido */
+.contenido {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menues {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+.menues h1 {
+    font-size: 18px;
+    color: rgb(16, 92, 16);
+}
+
+.menues ol {
+    list-style-type: decimal;
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* Estilo para mostrar el contenido */
+.mostrar {
+    display: block;
+}

@@ -1,152 +1,265 @@
-header{
-    background-color: rgb(200, 224, 216);
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
- }
- a{
-    text-decoration: none;
- }
- 
- header ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
- }
-
- header ul li{
-    margin: 10px;
- }
- img{ 
-    width: 310px;
- }
-
-h1{ 
-    font-size: 30px;
-    color: rgb(155, 113, 194);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-p{ 
-    font-size: 20px;
-    color: rgb(131, 116, 116);
+body{
+    font-family: 'open sans';
 }
-
-.enunciado{
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-}
-.enunciado h1{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel img{
-    width: 1920px;
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-    margin: 20px 0 20px 0;
-}
-
-
-.principal{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 20px 0 20px 0;
-    height: 70%;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-}
-.principal h1{
-    justify-content: center;
-}
-p{
-   width: 50%;
-   margin: 10px o 10px 0;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contenedor{ 
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 10px o 10px 0;
-    background-color: aliceblue;
- }
-
- .caja{ 
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
- }
-
- .caja h1{
-    justify-content: center;
-    align-items: center;
- }
- .caja img{
-    height: 150px;
-    width: 60%;
- }
-
- .caja p{
-    display: flex;
-    flex-direction: row;
-    font-size: 16px;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
- }
-
-.caja1 img{
-    width: auto;
-    height: 100%;
-}
-
-
-.caja2 img{
-width: auto;
-height: 100%;
-}
-
-
- #enlaces{
+.contenedor{
+    padding: 60px 0;
     width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 10px o 10px 0;
- }
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
 
-#enlaces iframe{
-    padding: 10px;
-    margin: 10px;
+.titulo{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
 }
-.final{
+/*Header*/
+header{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    height: 650px;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.45), hsla(317, 45%, 52%, 0.60)), url(./img/portada1.avif); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.45), hsla(317, 45%, 52%, 0.60)), url(./img/portada1.avif); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
 }
-.final p{
-    width: 100%;
-    margin-left: 0%;
-    margin-right: auto;
-    font-size: 16px;
+nav{
     text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+/*about us*/
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-about-us{
+    width: 65%;
+}
+.sobre-nosotros .contenido-textos{
+    width: 40%;
+}
+.contenido-textos h3{
+    margin: 15px;
+}
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, hsla(317, 45%, 52%, 0.60));
+    margin-right: 5px;
+}
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+/*tipos de piel*/
+
+.tiposdepiel{
+    background: #f2f2f2;
+}
+.galeria-tip{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.imagen-tip{
+    width: 24%;
+    margin-bottom: 10px;
+    
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.imagen-tip > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+    
+.hover-galeria{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        /*transform: scale(0);*/
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: trasnsform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.hover-galeria img{
+width: 50px;
+
+}
+.hover-galeria p{
+color: #fffc;
+
+}
+.imagen-tip:hover .hover-galeria{
+transform: scale(0);
+
+}
+/*busca un especialista*/
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards .card {
+    background: #7715c7;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+}
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: block;
+
+}
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*our teamm*/
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+.servicio-ind img{
+    width: 90%;
+
+}
+.servicio-ind h3{
+    margin: 10px 0;
+}
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+/*foote*/
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    align-items: center;
+
+}
+.content-foo{
+    text-align: center;
+
+}
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.content-foo p{
+    color: #ccc;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #0e9797;
+}
+@media screen and (max-width:900px) {
+    header{
+        background-position: center;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 90%;   
+    }
+    .imagen-about-us{
+        width: 90%;
+    }
 }
